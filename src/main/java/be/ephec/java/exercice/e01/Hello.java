@@ -13,6 +13,7 @@ public class Hello {
         int age=sc.nextInt();
         System.out.println("prenom: "+prenom+" nom: "+name+" age: "+age+" ans.");
 
+        System.out.println("en utilisant la classe personne ");
         Person p1=new Person();
         p1.age=27;
         p1.firstName="Galvao Coutinho";
