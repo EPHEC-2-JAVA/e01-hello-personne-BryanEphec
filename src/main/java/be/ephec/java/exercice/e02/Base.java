@@ -14,7 +14,7 @@ public class Base {
             if (base != 0 && number != 0) {
                 String numberString = Integer.toString(number);
                 int result = Integer.parseInt(numberString, base);
-                System.out.println("The number in base"+ base +" is: " + result);
+                System.out.println("The number in base"+ base + " is: " + result);
             }
         } while (base != 0 && number != 0);
 
