@@ -17,11 +17,9 @@ public class Game {
         while (p1.getPoints() < maxPoints && p2.getPoints() < maxPoints) {
             playNextRound();
         }
-
-        // remplacer l'instruction suivante par une instruction contenant un opérateur ternaire.
-        // La méthode doit retourner le joueur qui a gagné (= celui qui a le plus de points).
-        return null;
+        return (p1.getPoints() >= maxPoints) ? p1 : p2;
     }
+
 
     private void playNextRound() {
         int result1, result2;
@@ -29,9 +27,7 @@ public class Game {
             result1 = rollDice();
             result2 = rollDice();
         } while (result1 == result2);
-        // insérer ici l'instruction contenant l'opérateur ternaire
 
-        //
     }
 
     private int rollDice() {
